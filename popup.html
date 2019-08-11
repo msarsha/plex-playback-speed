@@ -2,18 +2,44 @@
 <html>
 <head>
 	<style>
-		button {
-			height: 30px;
+		body {
+			padding: 0;
+			margin: 0;
+		}
+
+		h3 {
+			background-color: cadetblue;
+			margin: 0;
+			padding: 10px;
+		}
+
+		#container {
+			padding: 10px;
+			width: 200px;
+		}
+
+		label {
+			display: flex;
+			align-items: center;
+			padding: 6px;
+			cursor: pointer;
+		}
+
+		label:hover {
+			background-color: azure;
+		}
+
+		label input {
 			width: 30px;
-			outline: none;
+			flex-shrink: 0;
 		}
 	</style>
 </head>
 <body>
-<h5>Plex Playback Speed</h5>
+<h3>Plex Playback Speed</h3>
 <form>
 	<div id="container">
-		<span>Playback Speed</span>
+		<span>Select Speed</span>
 	</div>
 </form>
 <script src="popup.js"></script>

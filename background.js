@@ -9,7 +9,7 @@ const activeRule = {
 };
 
 chrome.runtime.onInstalled.addListener(function() {
-	chrome.storage.sync.set({speed: 1.3}, function() {
+	chrome.storage.sync.set({speed: '1'}, function() {
 		console.log(1.3);
 	});
 

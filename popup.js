@@ -6,7 +6,6 @@ const generateOptionHtml = (val) => {
 	const input = createInput(val);
 
 	span.innerText = val;
-	labelElm.style.display = 'block';
 
 	labelElm.appendChild(input);
 	labelElm.appendChild(span);
@@ -35,6 +34,8 @@ const optionClickHandler = (e) => {
 };
 
 const container = document.getElementById('container');
+
+
 
 options.forEach((value) => {
 	container.appendChild(generateOptionHtml(value));
